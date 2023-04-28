@@ -46,9 +46,10 @@ body {
   width: 50%;
 }
 
-.prod-img img {
-  height: 100%;
-  width: 100%;
+.prod-img {
+  background-image: url(/images/image-product-desktop.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .prod-desc {
@@ -131,4 +132,16 @@ body {
   text-align: center;
   font-size: 14px;
   font-family: "Fraunces", serif;
+}
+
+@media screen and(min-width: 720px) {
+  .container {
+    padding: 10px;
+  }
+  .card {
+    min-width: 375px;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+  }
 }
